@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Back To the Future",
+      "image": "https://img01.mgo-images.com/image/thumbnail/v2/content/1MV7df2fa6b9701b20d36d8079aaf32e950.jpeg",
+      "quote": "Great Scott!",
+      "year": "1985"
+    },
+    {
+      "id": 2,
+      "name": "The Breakfast Club",
+      "image": "https://resizing.flixster.com/iI4xkmufQkFod2UlVBMbidvWNRk=/206x305/v1.bTsxMzAzNjM3ODtqOzE4MzMwOzEyMDA7NDUwOzYwMA",
+      "quote": "Can you explain the ruckus?",
+      "year": "1985"
+    },
+    {
+      "id": 3,
+      "name": "Top Gun",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/710nsn-AYoL._SL1140_.jpg",
+      "quote": "Sorry, Goose, but it's time to buzz the tower.",
+      "year": "1986"
+    },
+    {
+      "id": 4,
+      "name": "Dirty Dancing",
+      "image": "https://www.gstatic.com/tv/thumb/v22vodart/10022/p10022_v_v8_ah.jpg",
+      "quote": "No Body Puts Baby in the corner",
+      "year": "1987"
+    },
+    {
+      "id": 5,
+      "name": "The Karate Kid",
+      "image": "https://www.gstatic.com/tv/thumb/v22vodart/6526/p6526_v_v8_ab.jpg",
+      "quote": "Sweep the leg Johnny",
+      "year": "1984"
+    },
+    {
+      "id": 6,
+      "name": "E.T",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/919TdYMd3NL._SL1500_.jpg",
+      "quote": "Phone Home",
+      "year": "1982"
+    },
+    {
+      "id": 7,
+      "name": "The Goonies",
+      "image": "https://www.gstatic.com/tv/thumb/v22vodart/9070/p9070_v_v8_ai.jpg",
+      "quote": "Goonies never say die!",
+      "year": "1985"
+    },
+    {
+      "id": 8,
+      "name": "Youngblood",
+      "image": "https://i.pinimg.com/originals/f5/a8/c9/f5a8c9bdffd65a96cffa367a12b1e6da.jpg",
+      "quote": "The only thing better than a glass of beer, is tea with Miss McGill!",
+      "year": "1986"
+    },
+    {
+      "id": 9,
+      "name": "Caddyshack",
+      "image": "https://www.gstatic.com/tv/thumb/v22vodart/45/p45_v_v8_ag.jpg",
+      "quote": "Don't sell yourself short Judge, you're a tremendous slouch.",
+      "year": "1980"
+    },
+    {
+      "id": 10,
+      "name": "Field of Dreams",
+      "image": "https://www.gstatic.com/tv/thumb/v22vodart/11582/p11582_v_v8_ad.jpg",
+      "quote": "If you build it they will come.",
+      "year": "1989"
+    },
+    {
+      "id": 11,
+      "name": "Major League",
+      "image": "https://www.gstatic.com/tv/thumb/v22vodart/11561/p11561_v_v8_af.jpg",
+      "quote": "Have to wake up bats",
+      "year": "1989"
+    },
+    {
+      "id": 12,
+      "name": "The Terminator",
+      "image": "https://townsquare.media/site/295/files/2019/10/Terminator-Orion.jpg?w=980&q=75",
+      "quote": "I'll be back.",
+      "year": "1984"
+    }
+  ]
+  
