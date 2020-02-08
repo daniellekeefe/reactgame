@@ -52,7 +52,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Clicky-Game</h1>
           <p className="App-intro">
-            Try not to click the same movie twice!
+            To win, select 8 unique movie cards in a row. Select a duplicat movie and you loose. Good Luck!
           </p>
           <Widget/>
         </header>
@@ -62,7 +62,7 @@ class App extends Component {
                />
 
         <Wrapper>
-      <Title>Movies List</Title>
+      <Title>Movies</Title>
       {this.state.movies.map(movie => (
         <MovieCard
           handler={this.shuffleScoreCard}
@@ -76,7 +76,7 @@ class App extends Component {
       ))}
     </Wrapper>
         <footer>
-          <p><a href="" target="_blank" rel="noopener noreferrer"> here</a>.</p>
+          <p><a href="https://github.com/daniellekeefe/reactgame" target="_blank" rel="noopener noreferrer"> Check out reactgame on Github here</a>.</p>
         </footer>
     </div>
     );

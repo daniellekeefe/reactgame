@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import moment from "moment"
+import "./style.css";
 
-class App extends Component {
+class Weather extends Component {
   // Setting this.state.movies to the cards json array
   state = {
     
@@ -20,9 +21,11 @@ class App extends Component {
     //display som stuff
   render(){
       return (
+        <div classs="time">
           
-        <h1>Hi its {moment().format("hh:mm")}</h1>
+        Local Time is {moment().format("hh:mm")}
+        </div>
       )
   }
 }
- export default App;
+ export default Weather;
