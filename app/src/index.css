@@ -1,24 +1,25 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
-  color: white; 
+  color: white;
   text-align: center;
   font-size: small;
   font-family: monospace;
 }
-h1{
+h1 {
   font-size: xxx-large;
-  
 }
-p{
+p {
   font-style: italic;
   color: red;
 }
-h3{
+h3 {
   font-size: xx-large;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   padding: 0;
   margin: 0;
   height: 100%;

@@ -4,7 +4,6 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import movies from "./movies.json";
 import Score from "./components/Score";
-import Widget from "./components/WeatherDidget";
 
 class App extends Component {
   // Setting this.state.movies to the cards json array
@@ -20,30 +19,40 @@ class App extends Component {
   shuffleScoreCard = id => {
     let clickedMoviesIds = this.state.clickedMoviesIds;
 
-    if(clickedMoviesIds.includes(id)){
-      this.setState({ clickedMoviesIds: [], score: 0, status:  "Game Over! You lost. Click to play again!" });
+    if (clickedMoviesIds.includes(id)) {
+      this.setState({
+        clickedMoviesIds: [],
+        score: 0,
+        status: "Game Over! You lost. Click to play again!"
+      });
       return;
-    }else{
-      clickedMoviesIds.push(id)
+    } else {
+      clickedMoviesIds.push(id);
 
-      if(clickedMoviesIds.length === 8){
-        this.setState({score: 8, status: "You Won! Great Job, Smartie! Click to play again!", clickedMoviesIds: []});
-        console.log('You Win');
+      if (clickedMoviesIds.length === 8) {
+        this.setState({
+          score: 8,
+          status: "You Won! Great Job, Smartie! Click to play again!",
+          clickedMoviesIds: []
+        });
+        console.log("You Win");
         return;
       }
 
-      this.setState({ movies, clickedMoviesIds, score: clickedMoviesIds.length, status: " " });
-
+      this.setState({
+        movies,
+        clickedMoviesIds,
+        score: clickedMoviesIds.length,
+        status: " "
+      });
       for (let i = movies.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [movies[i], movies[j]] = [movies[j], movies[i]];
       }
     }
-  }
+  };
 
-  handleClick= id => {
-
-  }
+  handleClick = id => {};
 
   // Map over this.state.cards and render a Card component for each card object
   render() {
@@ -52,33 +61,39 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Clicky-Game</h1>
           <p className="App-intro">
-            To win, select 8 unique movie cards in a row. Select a duplicat movie and you loose. Good Luck!
+          To win, select 8 unique movie cards in a row. Select a duplicate movie and you lose. Good Luck!
           </p>
-          <Widget/>
         </header>
-        <Score total={this.state.score}
-               goal={8}
-               status={this.state.status}
-               />
+        <Score total={this.state.score} goal={8} status={this.state.status} />
 
         <Wrapper>
-      <Title>Movies</Title>
-      {this.state.movies.map(movie => (
-        <MovieCard
-          handler={this.shuffleScoreCard}
-          id={movie.id}
-          key={movie.id}
-          name={movie.name}
-          image={movie.image}
-          quote={movie.quote}
-          year={movie.year}
-        />
-      ))}
-    </Wrapper>
+          <Title>Movies</Title>
+          {this.state.movies.map(movie => (
+            <MovieCard
+              handler={this.shuffleScoreCard}
+              id={movie.id}
+              key={movie.id}
+              name={movie.name}
+              image={movie.image}
+              quote={movie.quote}
+              year={movie.year}
+            />
+          ))}
+        </Wrapper>
         <footer>
-          <p><a href="https://github.com/daniellekeefe/reactgame" target="_blank" rel="noopener noreferrer"> Check out reactgame on Github here</a>.</p>
+          <p>
+            <a
+              href="https://github.com/daniellekeefe/reactgame"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Check out reactgame on Github here
+            </a>
+            .
+          </p>
         </footer>
-    </div>
+      </div>
     );
   }
 }
