@@ -90,7 +90,7 @@ class App extends Component {
               {" "}
               Check out reactgame on Github here
             </a>
-            .
+            !
           </p>
         </footer>
       </div>
